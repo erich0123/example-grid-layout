@@ -1,3 +1,7 @@
+:root {
+  --bg-color: #e1e1e1;
+}
+
 html {
   box-sizing: border-box;
   font-size: 8px;
@@ -16,17 +20,16 @@ body {
 
   margin: 0px;
   padding: 0px;
-}
 
+  background: var(--bg-color);
+}
 
 .grid-item {
   color: #666;
-  background-color: #fff;
 
-  box-shadow: 3px 2px 4px #ddd, -2px -2px 4px #ccc;
-
-  border: 2px solid #fefefe;
-  border-radius: 10px;
+  border-radius: 50px;
+  background: var(--bg-color);
+  box-shadow: 20px 20px 60px #bfbfbf, -20px -20px 60px #ffffff;
 
   font-size: 4rem;
 
@@ -43,8 +46,8 @@ body {
   display: grid;
 
   margin: auto;
-  gap: 2rem;
-  padding: 1rem;
+  gap: 9rem;
+  padding: 9rem;
 
   grid-auto-rows: 30rem;
 }
@@ -58,6 +61,8 @@ body {
 @media (min-width: 1025px) {
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
+    padding: 9rem;
+    gap: 9rem;
   }
 }
 
